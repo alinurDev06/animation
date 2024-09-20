@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+#header {
+    background: black;
+    padding: 25px 0;
+    color: white;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: 2s ani;
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(-500px)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    70% {
+        transform: rotateX(180deg);
+    }
+
+}
+
+.header-text h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.header-navbar a {
+    padding-right: 50px;
+}
+
+.header-text button {
+    background: forestgreen;
+    padding: 15px 40px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#hero {
+    padding: 100px 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero img {
+    width: 70%;
+    object-fit: cover;
+    animation: 2s img;
+}
+
+@keyframes img {
+    0% {
+        transform: translateX(500px)
+    }
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 15px;
+    animation: 2s h1;
+}
+
+@keyframes h1 {
+    0% {
+        transform: translateX(-500px)
+    }
+}
+
+#aos {
+    padding: 100px 0
+}
+
+.aos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aos h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.aos p {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.aos img {
+    width: 50%;
+}
+
+
+#footer {
+    padding: 30px 0;
+    background: black;
+}
+
+.footer p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    animation: 2s footer;
+}
+
+@keyframes footer {
+     0% {
+         transform: translateX(-500px)
+     }
+    70% {
+        transform: rotateY(360deg);
+    }
+}
